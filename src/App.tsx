@@ -4,15 +4,15 @@
  */
 
 import { motion } from "motion/react";
-import { 
-  Flame, 
-  Heart, 
-  Key, 
-  MapPin, 
-  Users, 
-  ChevronRight, 
-  Instagram, 
-  Mail, 
+import {
+  Flame,
+  Heart,
+  Key,
+  MapPin,
+  Users,
+  ChevronRight,
+  Instagram,
+  Mail,
   Calendar,
   MessageCircle,
   ArrowRight,
@@ -55,14 +55,14 @@ export default function App() {
         </div>
         <div className="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest text-efata-dark">
           <a href="#inicio" className="hover:text-efata-muted transition-colors">Início</a>
-          <a href="#missao" className="hover:text-efata-muted transition-colors">Missão</a>
+          <a href="#missao" className="hover:text-efata-muted transition-colors">Pilares</a>
           <a href="#sobre" className="hover:text-efata-muted transition-colors">Sobre</a>
           <a href="#atuacao" className="hover:text-efata-muted transition-colors">Atuação</a>
           <a href="#contato" className="hover:text-efata-muted transition-colors">Contato</a>
         </div>
-        <a 
-          href="https://wa.me/5511999999999" 
-          target="_blank" 
+        <a
+          href="https://wa.me/5511999999999"
+          target="_blank"
           rel="noopener noreferrer"
           className="bg-efata-dark text-efata-cream px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-efata-deep transition-all shadow-lg flex items-center gap-2"
         >
@@ -75,17 +75,17 @@ export default function App() {
       <section id="inicio" className="relative pt-32 pb-20 px-6 overflow-hidden min-h-[90vh] flex items-center">
         {/* Background Image Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://picsum.photos/seed/mission-bg/1920/1080?blur=10" 
+          <img
+            src="https://picsum.photos/seed/mission-bg/1920/1080?blur=10"
             className="w-full h-full object-cover opacity-20 grayscale"
             alt="Background"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-efata-cream via-transparent to-efata-cream" />
         </div>
-        
+
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
-          <motion.div 
+          <motion.div
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
@@ -104,17 +104,25 @@ export default function App() {
               Somos um grupo de jovens missionários dedicados a levar a luz e a esperança onde quer que sejamos chamados. "Efatá" — Abre-te.
             </motion.p>
             <motion.div variants={fadeIn} className="flex flex-wrap gap-4">
-              <button className="bg-efata-dark text-efata-cream px-8 py-4 rounded-full flex items-center gap-2 font-bold uppercase tracking-widest hover:bg-efata-deep transition-all group">
+              <a
+                href="#missao"
+                className="bg-efata-dark text-efata-cream px-8 py-4 rounded-full flex items-center gap-2 font-bold uppercase tracking-widest hover:bg-efata-deep transition-all group"
+              >
                 Conheça nossa história
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="border border-efata-dark text-efata-dark px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-efata-dark hover:text-efata-cream transition-all">
+              </a>
+              <a
+                href="https://www.instagram.com/jovens.efataa?igsh=MXZqMDd1NmticjUwZg=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-efata-dark text-efata-dark px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-efata-dark hover:text-efata-cream transition-all text-center"
+              >
                 Nossas Missões
-              </button>
+              </a>
             </motion.div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -122,9 +130,9 @@ export default function App() {
           >
             <div className="absolute inset-0 bg-efata-dark/5 rounded-full blur-3xl" />
             <div className="relative w-full h-full max-w-md mx-auto bg-efata-dark rounded-[3rem] overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-700">
-              <img 
+              <img
                 src={`${import.meta.env.BASE_URL}img/1.jpg`}
-                alt="Jovens Efatá - Somos a juventude que incendiará o mundo" 
+                alt="Jovens Efatá - Somos a juventude que incendiará o mundo"
                 className="w-full h-full object-cover opacity-90 hover:scale-110 transition-all duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -156,7 +164,7 @@ export default function App() {
             { label: "Missões Realizadas", value: "40", icon: Heart },
             { label: "Ano de Missão", value: "1", icon: Calendar }
           ].map((stat, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -171,7 +179,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* Pilares Section */}
       <section id="missao" className="py-24 px-6 bg-efata-cream">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
@@ -202,7 +210,7 @@ export default function App() {
                 color: "bg-efata-brown"
               }
             ].map((pillar, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 whileHover={{ y: -10 }}
                 className="p-10 rounded-[2rem] bg-efata-dark/5 border border-efata-dark/10 flex flex-col items-center text-center group transition-all"
@@ -258,7 +266,7 @@ export default function App() {
               <p className="text-2xl font-serif italic text-efata-deep border-l-4 border-efata-olive pl-6 py-2">
                 "Somos jovens apaixonados por Jesus e dispostos a incendiar o mundo."
               </p>
-              
+
               <div className="space-y-4">
                 <p>
                   O grupo Efatá nasceu do desejo inquieto de jovens que não se conformam com o mundo, mas buscam transformá-lo através do amor e do serviço.
@@ -306,7 +314,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -317,7 +325,7 @@ export default function App() {
               </motion.div>
               <h2 className="text-5xl md:text-7xl font-serif text-efata-deep mb-8">Onde Atuamos</h2>
               <p className="text-xl text-efata-brown leading-relaxed mb-8">
-                Nossa missão não conhece fronteiras, mas nosso coração bate forte pelo <span className="font-bold text-efata-deep">Espírito Santo</span>. 
+                Nossa missão não conhece fronteiras, mas nosso coração bate forte pelo <span className="font-bold text-efata-deep">Espírito Santo</span>.
               </p>
               <p className="text-lg text-efata-muted leading-relaxed mb-10">
                 Com sede em solo capixaba, já levamos nossa luz por toda a <span className="italic">Grande Vitória</span>, atuando em comunidades, paróquias e periferias, sempre prontos para abrir corações onde quer que sejamos chamados.
@@ -331,14 +339,14 @@ export default function App() {
                 ))}
               </div>
             </div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               className="relative"
             >
               <div className="aspect-video bg-efata-dark rounded-[2rem] overflow-hidden shadow-2xl relative group">
-                <iframe 
+                <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100708.7295925725!2d-40.37770976878425!3d-20.27498001398379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d5d85374ee9%3A0x97595e7ea70ed809!2zVml0w7NyaWEsIEVT!5e0!3m2!1spt-BR!2sbr!4v1771866540625!5m2!1spt-BR!2sbr"
                   className="w-full h-full border-0 opacity-80 grayscale hover:grayscale-0 transition-all duration-700"
                   allowFullScreen={true}
@@ -368,18 +376,23 @@ export default function App() {
             Deseja levar a luz do Grupo Efatá para sua comunidade ou paróquia? Entre em contato conosco e convide-nos para uma missão.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
-            <a 
-              href="https://wa.me/5511999999999" 
-              target="_blank" 
+            <a
+              href="https://wa.me/5511999999999"
+              target="_blank"
               rel="noopener noreferrer"
               className="bg-efata-cream text-efata-dark px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-white transition-all shadow-xl flex items-center gap-3"
             >
               <MessageCircle className="w-6 h-6" />
               Fale Conosco
             </a>
-            <button className="border border-efata-cream/30 text-efata-cream px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-efata-cream/10 transition-all">
+            <a
+              href="https://wa.me/5527997881578"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-efata-cream/30 text-efata-cream px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-efata-cream/10 transition-all text-center"
+            >
               Falar com um líder
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -438,4 +451,4 @@ export default function App() {
     </div>
   );
 }
- 
+
