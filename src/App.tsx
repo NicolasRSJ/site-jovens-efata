@@ -154,7 +154,7 @@ export default function App() {
             { label: "Missionários", value: "19", icon: Users },
             { label: "Municipios", value: "4", icon: MapPin },
             { label: "Missões Realizadas", value: "40", icon: Heart },
-            { label: "Anos de Missão", value: "1", icon: Calendar }
+            { label: "Ano de Missão", value: "1", icon: Calendar }
           ].map((stat, i) => (
             <motion.div 
               key={i}
