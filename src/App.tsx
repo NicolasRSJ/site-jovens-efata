@@ -121,7 +121,7 @@ export default function App() {
             <div className="absolute inset-0 bg-efata-dark/5 rounded-full blur-3xl" />
             <div className="relative w-full h-full max-w-md mx-auto bg-efata-dark rounded-[3rem] overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-700">
               <img 
-                src="../img/1.jpg" 
+                src={`${import.meta.env.BASE_URL}img/1.png`}
                 alt="Jovens Efatá - Somos a juventude que incendiará o mundo" 
                 className="w-full h-full object-cover opacity-90 hover:scale-110 transition-all duration-700"
                 referrerPolicy="no-referrer"
