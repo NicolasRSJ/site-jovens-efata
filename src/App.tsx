@@ -40,6 +40,8 @@ const staggerContainer = {
   }
 };
 
+const img1 = new URL('../img/1.jpg', import.meta.url).href
+
 export default function App() {
   return (
     <div className="min-h-screen selection:bg-efata-dark selection:text-efata-cream">
@@ -121,7 +123,7 @@ export default function App() {
             <div className="absolute inset-0 bg-efata-dark/5 rounded-full blur-3xl" />
             <div className="relative w-full h-full max-w-md mx-auto bg-efata-dark rounded-[3rem] overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-700">
               <img 
-                src={`${import.meta.env.BASE_URL}img/1.jpg`}
+                src={img1}
                 alt="Jovens Efatá - Somos a juventude que incendiará o mundo" 
                 className="w-full h-full object-cover opacity-90 hover:scale-110 transition-all duration-700"
                 referrerPolicy="no-referrer"
