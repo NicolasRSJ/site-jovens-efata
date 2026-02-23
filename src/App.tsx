@@ -239,7 +239,7 @@ export default function App() {
           <div className="order-2 md:order-1">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <img src="../img/2.jpg" alt="Mission 1" className="rounded-3xl w-full aspect-[2/3] object-cover grayscale hover:grayscale-0 transition-all duration-500" referrerPolicy="no-referrer" />
+                <img src={`${import.meta.env.BASE_URL}img/2.jpg`} alt="Mission 1" className="rounded-3xl w-full aspect-[2/3] object-cover grayscale hover:grayscale-0 transition-all duration-500" referrerPolicy="no-referrer" />
                 <div className="bg-efata-olive p-8 rounded-3xl aspect-square flex items-center justify-center">
                   <Flame className="text-efata-cream w-12 h-12" />
                 </div>
@@ -248,7 +248,7 @@ export default function App() {
                 <div className="bg-efata-muted p-8 rounded-3xl aspect-square flex items-center justify-center">
                   <Users className="text-efata-cream w-12 h-12" />
                 </div>
-                <img src="../img/3.jpg" alt="Mission 2" className="rounded-3xl w-full aspect-[2/3] object-cover grayscale hover:grayscale-0 transition-all duration-500" referrerPolicy="no-referrer" />
+                <img src={`${import.meta.env.BASE_URL}img/3.jpg`} alt="Mission 2" className="rounded-3xl w-full aspect-[2/3] object-cover grayscale hover:grayscale-0 transition-all duration-500" referrerPolicy="no-referrer" />
               </div>
             </div>
           </div>
