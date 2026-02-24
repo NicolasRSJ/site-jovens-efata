@@ -434,7 +434,7 @@ export default function App() {
               <h4 className="text-efata-cream font-bold uppercase tracking-widest text-xs mb-8">Contato</h4>
               <ul className="space-y-4 text-sm">
                 <li className="flex items-center gap-3"><MapPin className="w-4 h-4" />Espírito Santos, Brasil</li>
-                <li className="flex items-center gap-3"><Mail className="w-4 h-4" /> contato@missaoefata.org</li>
+                <li className="flex items-center gap-3"><Mail className="w-4 h-4" /> jovens.efataa@gmail.com</li>
                 <li className="flex items-center gap-3"><Users className="w-4 h-4" /> @jovens.efataa</li>
               </ul>
             </div>
