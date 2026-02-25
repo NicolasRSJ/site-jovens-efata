@@ -61,7 +61,7 @@ export default function App() {
           <a href="#contato" className="hover:text-efata-muted transition-colors">Contato</a>
         </div>
         <a
-          href="https://wa.me/5511999999999"
+          href="https://wa.me/5527999307807"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-efata-dark text-efata-cream px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-efata-deep transition-all shadow-lg flex items-center gap-2"
@@ -376,21 +376,13 @@ export default function App() {
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5527999307807"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-efata-cream text-efata-dark px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-white transition-all shadow-xl flex items-center gap-3"
             >
               <MessageCircle className="w-6 h-6" />
               Fale Conosco
-            </a>
-            <a
-              href="https://wa.me/5527997881578"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-efata-cream/30 text-efata-cream px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-efata-cream/10 transition-all text-center"
-            >
-              Falar com um líder
             </a>
           </div>
         </div>
