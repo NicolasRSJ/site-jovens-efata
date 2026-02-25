@@ -101,14 +101,14 @@ export default function App() {
               <span className="italic text-efata-muted">Coração.</span>
             </motion.h1>
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-efata-brown max-w-lg mb-10 leading-relaxed">
-              Somos um grupo de jovens missionários dedicados a levar a luz e a esperança onde quer que sejamos chamados. "Efatá" — Abre-te.
+              Somos um grupo de jovens missionários da Igreja Católica Apostólica Romana, dedicados a levar a luz e a esperança onde quer que sejamos chamados. "Efatá" — Abre-te.
             </motion.p>
             <motion.div variants={fadeIn} className="flex flex-wrap gap-4">
               <a
                 href="#missao"
                 className="bg-efata-dark text-efata-cream px-8 py-4 rounded-full flex items-center gap-2 font-bold uppercase tracking-widest hover:bg-efata-deep transition-all group"
               >
-                Conheça nossa história
+                Descubra Nossa Missão
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
@@ -157,11 +157,10 @@ export default function App() {
 
       {/* Stats Section */}
       <section className="bg-efata-dark py-20 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {[
             { label: "Missionários", value: "19", icon: Users },
             { label: "Municipios", value: "4", icon: MapPin },
-            { label: "Missões Realizadas", value: "40", icon: Heart },
             { label: "Ano de Missão", value: "1", icon: Calendar }
           ].map((stat, i) => (
             <motion.div
@@ -183,9 +182,9 @@ export default function App() {
       <section id="missao" className="py-24 px-6 bg-efata-cream">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-7xl font-serif text-efata-deep mb-6">Nossos Pilares</h2>
+            <h2 className="text-5xl md:text-7xl font-serif text-efata-deep mb-6">Pilares da Igreja Católica</h2>
             <p className="text-efata-muted max-w-2xl mx-auto uppercase tracking-[0.2em] text-sm font-bold">
-              Fundamentados na fé, no serviço e na comunidade
+              Fundamentados na fé Católica, no serviço e na comunidade
             </p>
           </div>
 
@@ -269,7 +268,7 @@ export default function App() {
 
               <div className="space-y-4">
                 <p>
-                  O grupo Efatá nasceu do desejo inquieto de jovens que não se conformam com o mundo, mas buscam transformá-lo através do amor e do serviço.
+                  O grupo Efatá nasceu no seio da Igreja Católica Apostólica Romana, do desejo inquieto de jovens que buscam a santidade através do amor e do serviço missionário.
                 </p>
                 <p>
                   Nossa caminhada é marcada por missões em comunidades carentes, retiros de espiritualidade e uma vida comunitária vibrante. Acreditamos que cada jovem tem uma chave única capaz de abrir portas de esperança.
@@ -409,7 +408,7 @@ export default function App() {
                 <span className="font-serif text-2xl font-bold tracking-tighter uppercase text-efata-cream">Efatá</span>
               </div>
               <p className="text-lg max-w-sm mb-8">
-                Levando a luz da missão a todos os corações. Desde 2024 transformando vidas.
+                Grupo missionário da Igreja Católica Apostólica Romana. Levando a luz da missão a todos os corações desde 2024.
               </p>
               <div className="flex gap-4">
                 <a href="#" className="w-10 h-10 rounded-full border border-efata-cream/10 flex items-center justify-center hover:bg-efata-cream hover:text-efata-deep transition-all">
@@ -424,7 +423,7 @@ export default function App() {
               <h4 className="text-efata-cream font-bold uppercase tracking-widest text-xs mb-8">Navegação</h4>
               <ul className="space-y-4 text-sm">
                 <li><a href="#inicio" className="hover:text-efata-cream transition-colors">Início</a></li>
-                <li><a href="#missao" className="hover:text-efata-cream transition-colors">Missão</a></li>
+                <li><a href="#missao" className="hover:text-efata-cream transition-colors">Pilares</a></li>
                 <li><a href="#sobre" className="hover:text-efata-cream transition-colors">Sobre</a></li>
                 <li><a href="#atuacao" className="hover:text-efata-cream transition-colors">Atuação</a></li>
                 <li><a href="#" className="hover:text-efata-cream transition-colors">Blog</a></li>
