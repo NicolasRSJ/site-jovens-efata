@@ -1,8 +1,7 @@
 # 🕊️ Site Jovens Efatá
 
-Landing page para o **grupo de jovens missionários Efatá**, uma
-comunidade que busca promover missão, espiritualidade e relacionamento
-em comunidade dentro da igreja e na sociedade.
+Landing page para o **Jovens missionários Efatá**, um grupo que busca promover missão, espiritualidade e relacionamento
+em comunidade dentro da igreja católica romana e na sociedade.
 
 ------------------------------------------------------------------------
 
@@ -109,4 +108,4 @@ adaptar conforme sua necessidade.
 ## 📬 Contato
 
 Para mais informações sobre o Grupo de Jovens Efatá, consulte as redes
-sociais oficiais da comunidade.
+sociais oficiais da grupo.
